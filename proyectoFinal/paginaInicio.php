@@ -28,7 +28,7 @@ session_start();
           <span class="nav__text">Sobre Nosotros</span>
           <ion-icon name="paper-plane-outline" size="large"></ion-icon>
         </a>
-        <a href="http://localhost/Github/GitHub/proyectoFinal/index.php" class="nav__link">
+        <a href="http://localhost/Github/FinalProject/proyectoFinal/index.php" class="nav__link">
           <span class="nav__text">Soporte</span>
           <ion-icon name="information-circle-outline" size="large"></ion-icon>
         </a>
