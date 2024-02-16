@@ -25,6 +25,15 @@
             </form> <img src="cartelLetter.png" alt="cartel" class="cartel">
 
             <?php
+            if (filter_has_var(INPUT_POST, 'email')) { //Verificación de email.
+                $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); //se guarda en una variable
+                if (false === $email) { //si el correo no es válido.
+                    echo 'El correo electrónico no es válido';
+                } else {
+                    echo 'El correo electrónico validado es: $email';
+                }
+            }
+            //Se guarda la información del usuario y BBDD.
             if ($_SERVER["REQUEST_METHOD"] == "POST") { //Verificación de si el formulario ha sido enviado
                 // Obtenemos el nombre de usuario y contraseña desde el formulario
                 $nombre = $_POST["usuario"];
