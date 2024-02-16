@@ -29,7 +29,7 @@
             if (filter_has_var(INPUT_POST, 'usuario')) { //Verificación de email.
                 $email = filter_input(INPUT_POST, 'usuario', FILTER_VALIDATE_EMAIL); //se guarda en una variable
                 if (false === $email) { //si el correo no es válido.
-                    echo 'El correo electrónico no es válido';
+                    echo '<br><br>El correo electrónico no es válido';
                 } else {
                     //Se guarda la información del usuario y BBDD.
                     if ($_SERVER["REQUEST_METHOD"] == "POST") { //Verificación de si el formulario ha sido enviado
