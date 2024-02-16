@@ -30,7 +30,7 @@
                 if (false === $email) { //si el correo no es válido.
                     echo 'El correo electrónico no es válido';
                 } else {
-                    echo 'El correo electrónico validado es: $email';
+                    echo 'El correo electrónico validado es:' . $email;
                 }
             }
             //Se guarda la información del usuario y BBDD.
