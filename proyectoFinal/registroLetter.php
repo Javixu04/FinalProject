@@ -25,8 +25,8 @@
             </form> <img src="cartelLetter.png" alt="cartel" class="cartel">
 
             <?php
-            if (filter_has_var(INPUT_POST, 'email')) { //Verificación de email.
-                $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); //se guarda en una variable
+            if (filter_has_var(INPUT_POST, 'usuario')) { //Verificación de email.
+                $email = filter_input(INPUT_POST, 'usuario', FILTER_VALIDATE_EMAIL); //se guarda en una variable
                 if (false === $email) { //si el correo no es válido.
                     echo 'El correo electrónico no es válido';
                 } else {
