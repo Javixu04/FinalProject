@@ -1,0 +1,146 @@
+body {
+    margin: 0; 
+    background-color: #f3f0f0;
+    overflow-x: hidden; /*Se oculta*/
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .nav-open .nav {
+    transform: translateX(0); /*Transiciones en la barra de navegación*/
+  }
+
+  .nav-open .main {
+    transform: translateX(350px); /*Transiciones en la barra de navegación*/
+  }
+
+  .nav {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    transform: translateX(
+      -350px
+    ); 
+    transition: transform 0.2s; 
+    overflow: hidden;
+  }
+
+  .nav-close {
+    background: none;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 15px 25px;
+    color: #dddddd;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .nav-close:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links-container {
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #dddddd;
+  }
+
+  .nav__text {
+    font-size: 22px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+  }
+
+  .nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .main {
+    transition: transform 0.2s;
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .fotoPerfil,
+  .home,
+  .ajustes {
+    display: inline-block; 
+    vertical-align: middle;
+  }
+
+  .home,
+  .ajustes {
+    margin-right: 100px;
+  }
+
+  .fotoPerfil {
+    width: 7%;
+  }
+
+  .quienesSomos,
+  .info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .info {
+    width: 3%;
+  }
+
+  .planes-a {
+    margin-top: 4%;
+  }
+
+  .plan-container {
+    text-align: center;
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .standart,
+  .premium {
+    font-size: 20px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+
+  .line {
+    border-right: 1px solid black; 
+    height: 350px;
+    position: fixed;
+  }
+
+  .elegir-button {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: inline-block;
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 25%;
+  }

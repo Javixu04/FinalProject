@@ -1,0 +1,35 @@
+body {
+    margin: 0; /* Elimina el margen predeterminado del body */
+    background-color: #f3f0f0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fotoPerfil,
+.home,
+.ajustes {
+    display: inline-block; /* Coloca los elementos en línea */
+    vertical-align: middle;
+}
+
+.home,
+.ajustes{margin-right: 120px}
+
+.ajustes,
+.quienesSomos{margin-right: 450px;}
+
+.fotoPerfil{width: 5%;}
+
+.ajustes{width: 3%;
+        margin-right: 60%;}
+
+.info{width: 3%;}
+
+.quienesSomos{margin-right: 30px;}
+
+.vertical {
+    border-right: 2px solid black;
+    height: 100vh; /* 100% de la altura de la ventana */
+    position: fixed;
+    top: 0;
+    right: 20px; /* Ajusta la posición desde la derecha según sea necesario */
+}
