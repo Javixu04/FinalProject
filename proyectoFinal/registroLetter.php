@@ -17,7 +17,7 @@
             <img src="avatar.png" alt="avatar" class="avatar">
             <!--Formulario de registro con método POST-->
             <form action="" method="post" id="miformu" name="miformu">
-                <input type="text" placeholder="Nombre de usuario / Email" id="usuario" name="usuario" required /><br /><br />
+                <input type="text" placeholder="Correo electrónico" id="usuario" name="usuario" required /><br /><br />
                 <input type="password" placeholder="Contraseña" id="password" name="password" required><br><br>
                 <input type="password" placeholder="Confirmar contraseña" id="confirmPassword" required><br><br>
                 <a href="inicioSesion.php" class="inicio">Iniciar Sesión</a><br><br>

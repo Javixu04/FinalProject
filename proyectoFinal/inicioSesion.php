@@ -62,7 +62,7 @@ session_start();
     ?>
     <!--Formulario de registro con método POST-->
     <form action="" method="post">
-      <input type="text" placeholder="Nombre de usuario / Email" id="usuario" name="usuario" required /><br /><br />
+      <input type="text" placeholder="Correo electrónico" id="usuario" name="usuario" required /><br /><br />
       <input type="password" placeholder="Contraseña" id="password" name="password" required /><br /><br />
       <input type="submit" value="Iniciar sesión" id="inicioSesion" />
     </form>
